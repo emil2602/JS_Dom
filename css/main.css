@@ -1,0 +1,53 @@
+@import url("./_mixins.scss");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+}
+
+.box {
+  transition: all 750ms ease;
+  cursor: pointer;
+}
+.box-leftTop {
+  position: fixed;
+  background-color: blue;
+  top: 0;
+  left: 0;
+}
+.box-rightTop {
+  position: fixed;
+  background-color: orange;
+  right: 0;
+  top: 0;
+}
+.box-rightBottom {
+  position: fixed;
+  background-color: tomato;
+  bottom: 0;
+  right: 0;
+}
+.box-leftBottom {
+  position: fixed;
+  background-color: grey;
+  bottom: 0;
+  left: 0;
+}
+.box-center {
+  position: fixed;
+  background-color: aquamarine;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 500ms ease, height 500ms ease;
+}/*# sourceMappingURL=main.css.map */
